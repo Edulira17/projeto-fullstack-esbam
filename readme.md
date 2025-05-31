@@ -1,100 +1,120 @@
-📋🎓 Sistema de Cadastro de Alunos
-📝 Descrição
+# 📋🎓 Sistema de Cadastro de Alunos
+
+## 📝 Descrição
+
 Esta é uma aplicação web fullstack para gerenciamento de alunos, desenvolvida com:
 
-⚛️ React + Vite no frontend para uma experiência moderna e responsiva.
+* ⚛️ **React + Vite** no frontend para uma experiência moderna e responsiva.
+* 🚀 **Node.js + Express** no backend para criação de APIs RESTful.
+* 📓 **SQLite** como banco de dados local simples e eficiente.
+* 🐳 **Docker + Docker Compose** para facilitar o ambiente de desenvolvimento.
 
-🚀 Node.js + Express no backend para criação de APIs RESTful.
+### Funcionalidades
 
-🗃️ SQLite como banco de dados local simples e eficiente.
+* ➕ Cadastro de alunos com nome, email e curso
+* 📖 Visualização de todos os alunos cadastrados
+* 🗑️ Remoção de alunos
 
-🐳 Docker + Docker Compose para facilitar o ambiente de desenvolvimento.
+---
 
-Funcionalidades
-➕ Cadastro de alunos com nome, email e curso
+## 💻 Execução Local (sem Docker)
 
-📖 Visualização de todos os alunos cadastrados
-
-🗑️ Remoção de alunos
-
-💻 Execução Local (sem Docker)
 Se preferir executar manualmente sem Docker, siga os passos:
 
-1. Clone o repositório
-bash
-Copiar
-Editar
-git clone https://github.com/Edulira17/projeto-fullstack-esbam
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/gusttazy/fullstack-app
 cd fullstack-app
-2. Instale as dependências do backend
-bash
-Copiar
-Editar
+```
+
+### 2. Instale as dependências do backend
+
+```bash
 cd backend
 npm install
-3. Instale as dependências do frontend
-bash
-Copiar
-Editar
+```
+
+### 3. Instale as dependências do frontend
+
+```bash
 cd ../frontend/cadastro-alunos
 npm install
-4. Execute os servidores (em terminais separados)
-Backend:
+```
 
-bash
-Copiar
-Editar
-npm run dev
-Frontend:
+### 4. Execute os servidores (em terminais separados)
 
-bash
-Copiar
-Editar
-npm run dev
-🐳 Execução com Docker (Recomendado)
+* Backend:
+
+  ```bash
+  npm run dev
+  ```
+* Frontend:
+
+  ```bash
+  npm run dev
+  ```
+
+---
+
+## 🐳 Execução com Docker (Recomendado)
+
 A forma mais prática de executar o projeto é com Docker Compose.
 
-Pré-requisitos
-Docker
+### Pré-requisitos
 
-Docker Compose
+* [Docker](https://www.docker.com/)
+* [Docker Compose](https://docs.docker.com/compose/)
 
-Passo a passo
-Navegue até a raiz do projeto:
+### Passo a passo
 
-bash
-Copiar
-Editar
+1. Navegue até a raiz do projeto:
+
+```bash
 cd /caminho/para/fullstack-app
-Construa e inicie os containers:
+```
 
-bash
-Copiar
-Editar
+2. Construa e inicie os containers:
+
+```bash
 docker-compose up --build
+```
+
 Esse comando irá:
 
-Criar e subir o backend (backend-app) na porta 3001
+* Criar e subir o backend (`backend-app`) na porta **3001**
+* Criar e subir o frontend (`frontend-app`) na porta **5173**
+* Criar um volume `sqlite_data` para persistência do banco de dados SQLite
 
-Criar e subir o frontend (frontend-app) na porta 5173
+---
 
-Criar um volume sqlite_data para persistência do banco de dados SQLite
+## 🌐 Acesso à Aplicação
 
-🌐 Acesso à Aplicação
 Após subir os containers, acesse:
 
-🔌 Backend: http://localhost:3001
+* 🔌 **Backend:** [http://localhost:3001](http://localhost:3001)
+* 🌍 **Frontend:** [http://localhost:5173](http://localhost:5173)
 
-🌍 Frontend: http://localhost:5173
+> Abra seu navegador e visite `http://localhost:5173` para começar a usar! 🎉
 
-Abra seu navegador e visite http://localhost:5173 para começar a usar! 🎉
+---
 
-🛠️ Tecnologias
-Frontend: React, Vite, TypeScript
+## 🛠️ Tecnologias
 
-Backend: Node.js, Express
+* **Frontend:** React, Vite, TypeScript
+* **Backend:** Node.js, Express
+* **Banco de Dados:** SQLite
+* **Containerização:** Docker, Docker Compose
 
-Banco de Dados: SQLite
+---
 
-Containerização: Docker, Docker Compose
+## 📄 Licença
 
+Distribuído sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar!
+
+---
+
+## 👨‍💼 Autor
+
+Desenvolvido com 💙 por \[Seu Nome Aqui]
+Entre em contato ou contribua com melhorias!
