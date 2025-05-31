@@ -24,8 +24,8 @@ Se preferir executar manualmente sem Docker, siga os passos:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/gusttazy/fullstack-app
-cd fullstack-app
+git clone https://github.com/Edulira17/projeto-fullstack-esbam
+cd  projeto-fullstack-esbam
 ```
 
 ### 2. Instale as dependências do backend
@@ -71,7 +71,7 @@ A forma mais prática de executar o projeto é com Docker Compose.
 1. Navegue até a raiz do projeto:
 
 ```bash
-cd /caminho/para/fullstack-app
+cd /caminho/para/projeto-fullstack-esbam
 ```
 
 2. Construa e inicie os containers:
@@ -116,5 +116,5 @@ Distribuído sob a licença MIT. Sinta-se livre para usar, modificar e compartil
 
 ## 👨‍💼 Autor
 
-Desenvolvido com 💙 por \[Seu Nome Aqui]
+Desenvolvido com 💙 por Eduardo Lira
 Entre em contato ou contribua com melhorias!
