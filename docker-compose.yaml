@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  backend: 
+    build: ./backend
+    container_name: backend-app
+    volumes:
+      - ./backend:/app
+      - sqlite_data:/app/bancodedados.db
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+
+  frontend: 
+    build: ./frontend/cadastro-alunos
+    container_name: frontend-app
+    volumes:
+      - ./frontend/cadastro-alunos:/app
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - backend
+
+volumes:
+ sqlite_data:
+
